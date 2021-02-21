@@ -6,7 +6,8 @@ public class Main {
     public static void main(String[] args) {
         // Scanner key =new Scanner(System.in);
         int veces = 0, sele = 0;
-
+        LocalDate fecha = LocalDate.now();
+        LocalTime hora = LocalTime.now();
         String contra = "", usuario = "", usuarior = "", contrar = "";
         //Registro
         //Usuario
@@ -45,7 +46,8 @@ public class Main {
             System.out.println("""
                      Presione 1: Cambiar contraseña
                     Presione 2: Para llenar formulario\s
-                    Presione 3: Para realizar un pedido""");
+                    Presione 3: Para realizar un pedido\s
+                    Presione 4: Salir""");
             sele = se.nextInt();
 
             switch (sele) {
@@ -81,9 +83,12 @@ public class Main {
                             Presione 4: informacion sobre servicios premiun""");
                     int pedido = pe.nextInt();
                     switch (pedido) {
-                        case 1 -> System.out.println("Usted ha recibido un mes de servicios Premium");
-                        case 2 -> System.out.println("Usted ha recibido un 3 mes de servicios Premium");
-                        case 3 -> System.out.println("Usted ha recibido un año de servicios Premium");
+                        case 1 -> System.out.println("Usted ha recibido un mes de servicios Premium" +
+                                "\nA partir del dia: " + fecha + "a las: "+ hora);
+                        case 2 -> System.out.println("Usted ha recibido un 3 mes de servicios Premium"+
+                                "\nA partir del dia: " + fecha + "a las: "+ hora);
+                        case 3 -> System.out.println("Usted ha recibido un año de servicios Premium" +
+                                "\nA partir del dia: " + fecha + "a las: "+ hora);
                         case 4 -> System.out.println("""
                                 El servicio premium incluye:\s
                                 Seguridad de red
@@ -93,7 +98,10 @@ public class Main {
 
                     }
                 }
+                case 4-> System.out.println("Gracias por su visita, su ultimo acceso fue:" +
+                        "\n El dia: " + fecha + "a las: "+ hora);                                     
             }
+                                              
         }
     }
 }
