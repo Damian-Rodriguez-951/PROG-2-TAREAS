@@ -1,64 +1,42 @@
 package com.company;
-
+import java.util.Scanner;
 public class   Main {
 
     public static void main(String[] args) {
-	// write your code here
-        Num Ca1 = new Num(3,8);
-        Ca1.restar(7);
-        System.out.println(Ca1);
+        // write your code here
+        calculo Cal1 = new calculo();
+        double resultado,num1,num2;
+        int opcion;
+        boolean opc = true;
+        while (opc) {
+            Scanner se = new Scanner(System.in);
+            System.out.println("------------");
+            System.out.println("Menu pirncipal");
+            System.out.println("1: Sumar");
+            System.out.println("2: Restar");
+            System.out.println("3: Multiplicar");
+            System.out.println("4: Dividir");
+            System.out.println("5: Salir");
+            opcion = se.nextInt();
+            if (opcion == 5) {
+                System.out.println("Sesión finalizada");
+                break;
+            } else {
+                switch (opcion) {
+                    case 1:
+                        Scanner n1 = new Scanner(System.in);
+                        System.out.println("Ingrese el primer valor:");
+                        num1 =n1.nextDouble();
+                        Scanner n2 = new Scanner(System.in);
+                        System.out.println("Ingrese el segundo valor:");
+                        num2 =n2.nextDouble();
+                        resultado = cal1.sumar(num1,num2);
+                        System.out.println("La resta es: "+ resultado);
+                        break;
+                    case 2:
+
+                }
+            }
+        }
     }
-}
-
-//CODIGO AGREGADO
-package com.company;
-
-public class Main {
-        public static void main(String[] args) {
-            public int Type
-            System.out.println("Welcome to Ultimate Calculator/nSelect what kind of operation you are doing");
-            System.out.println("""
-                    Type 1: Add
-                    Type 2: Substract
-                    Type 3: Multiply
-                    Type 4: Divide""");
-            public int getType();
-             return Type;
-
-             int Type
-             switch (Type) {
-                 Case 1: {
-
-                 }
-                 Case 2: {
-
-                 }
-                 Case 3: {
-
-                 }
-                 Case 4: {
-
-                 }
-             }
-            System.out.println("""
-                    1. Go To Calculator
-                    2. Exit """);
-		public int getChoice();
-            System.out.println("""
-                    1. Go To Calculator
-                    2. Exit """);
-            int choice = choice.nextLine();
-             if (choice == 1) {
-
-        }
-             else (Choice == 2){
-                 System.out.println("Thanks for using Ultimate Calculator");
-            }
-             else if (){
-                 System.out.println("Wrong number, please try again")
-                         
-            }
-           
-        }
-			       
 }
