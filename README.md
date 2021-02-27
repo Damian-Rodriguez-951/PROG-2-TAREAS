@@ -1,10 +1,11 @@
 # PROG-2-TAREAS
-En este repositorio se encuentra el taller grupal 1 acerca de pedidos.
+
+En este repositorio se encuentran las ramas:
+**Branch 1**: taller grupal 1 acerca de pedidos.
+**Branch 2**: tarea grupal de calculadora OOP
 
 Integrantes del grupo
 - Damián Rodríguez
 - Andrea Abreu
 - Isaac Mora
 - Mayeli Pérez
-
-CLAIM: este programa fue previamente desarrollado por el estudiante Ricardo Mora y en el grupo se hicieron las mejoras y adiciones.
