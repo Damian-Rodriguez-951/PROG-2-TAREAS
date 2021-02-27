@@ -43,6 +43,22 @@ public class Main {
             System.out.println("""
                     1. Go To Calculator
                     2. Exit """);
+		public int getChoice();
+            System.out.println("""
+                    1. Go To Calculator
+                    2. Exit """);
+            int choice = choice.nextLine();
+             if (choice == 1) {
+
+        }
+             else (Choice == 2){
+                 System.out.println("Thanks for using Ultimate Calculator");
+            }
+             else if (){
+                 System.out.println("Wrong number, please try again")
+                         
+            }
            
         }
+			       
 }
