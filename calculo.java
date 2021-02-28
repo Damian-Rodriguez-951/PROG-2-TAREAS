@@ -1,11 +1,43 @@
 package com.company;
 public class calculo{
-    public static double sumar(double num1, double num2) {
+
+//atributos
+    private double num1;
+    private double num2;
+    private double resultado;
+    // Constructor
+    public calculo(double num1, double num2) {
+        this.num1 = num1;
+        this.num2 = num2;
     }
 
-    double resultado = 0;
-    resultado = num1 +num2;
-    return resultado;
+    // Getters y setters
+    public double getNum1() {
+        return num1;
+    }
+    public void setNum1(double num1) {
+        this.num1 = num1;
+    }
+    public double getNum2() {
+        return num2;
+    }
+    public void setNum2(Double num2) {
+        this.num2 = num2;
+    }
 
-}
+    // Métodos especiales
+    public double suma() {
+        return this.num1 + this.num2;
+    }
+    public double resta() {
+        return this.num1 - this.num2;
+    }
+    public double multiplicacion() {
+        return this.num1 * this.num2;
+    }
+    public double division() {
+        return this.num1 / this.num2;
+    }
+    }
+
 

@@ -4,11 +4,10 @@ public class   Main {
 
     public static void main(String[] args) {
         // write your code here
-        calculo Cal1 = new calculo();
+        calculo Cal1 = new calculo(2,5);
         double resultado,num1,num2;
         int opcion;
-        boolean opc = true;
-        while (opc) {
+
             Scanner se = new Scanner(System.in);
             System.out.println("------------");
             System.out.println("Menu pirncipal");
@@ -18,25 +17,30 @@ public class   Main {
             System.out.println("4: Dividir");
             System.out.println("5: Salir");
             opcion = se.nextInt();
-            if (opcion == 5) {
-                System.out.println("Sesión finalizada");
-                break;
-            } else {
+if(opcion==5)
+    System.out.println("Saliendo de la calculadora");
+else
                 switch (opcion) {
                     case 1:
-                        Scanner n1 = new Scanner(System.in);
-                        System.out.println("Ingrese el primer valor:");
-                        num1 =n1.nextDouble();
-                        Scanner n2 = new Scanner(System.in);
-                        System.out.println("Ingrese el segundo valor:");
-                        num2 =n2.nextDouble();
-                        resultado = cal1.sumar(num1,num2);
-                        System.out.println("La resta es: "+ resultado);
+                        resultado= Cal1.suma();
+                        System.out.println("el resultado es: " + resultado);
                         break;
                     case 2:
-
+                        resultado= Cal1.resta();
+                        System.out.println("el resultado es: " + resultado);
+                        break;
+                    case 3:
+                        resultado= Cal1.multiplicacion();
+                        System.out.println("el resultado es: " + resultado);
+                        break;
+                    case 4:
+                        resultado= Cal1.division();
+                        System.out.println("el resultado es: " + resultado);
+                        break;
+                    default:
+                        System.out.println("Numero fuera del rango de seleccion");
                 }
             }
         }
-    }
-}
+
+
