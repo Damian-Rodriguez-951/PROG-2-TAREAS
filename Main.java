@@ -111,24 +111,45 @@ public class Main {
                 switch (pedido) {
                     case 1 -> {
                         boolean c1 = true;
-                        boolean det4 =Swtich.men1(c1);
-                        while(det4==true);
-                        System.out.println("Usted ha recibido un mes de servicios Premium" +
-                                "\nA partir del dia: " + fecha + "a las: " + hora);
+                        boolean det4 = Swtich.men1(c1);
+                        if (det4 == true) {
+                            System.out.println("Usted ha recibido un mes de servicios Premium" +
+                                    "\nA partir del dia: " + fecha + " a las: " + hora);
+                        }
+                        break;
                     }
-                    case 2 -> System.out.println("Usted ha recibido un 3 mes de servicios Premium" +
-                            "\nA partir del dia: " + fecha + "a las: " + hora);
-                    case 3 -> System.out.println("Usted ha recibido un año de servicios Premium" +
-                            "\nA partir del dia: " + fecha + "a las: " + hora);
-                    case 4 -> System.out.println("""
-                            El servicio premium incluye:\s
-                            Seguridad de red
-                             Nube de IoT de electrodomesticos
-                             Notificador en tiempo real de la infraestructura de la casa""");
-                    default -> throw new IllegalStateException("Numero de seleccion incorrecto");
+                    case 2 -> {
+                        boolean c2 = true;
+                        boolean det5 = Swtich.men3(c2);
+                        if(det5==true) {
+                            System.out.println("Usted ha recibido un 3 mes de servicios Premium" +
+                                    "\nA partir del dia: " + fecha + "a las: " + hora);
+                        }
+                        break;
+                    }
+                    case 3 -> {
+                        boolean c3 =true;
+                                boolean det5 = Swtich.anual(c3);
+                        if(det5==true) {
+                            System.out.println("Usted ha recibido un año de servicios Premium" +
+                                    "\nA partir del dia: " + fecha + " a las: " + hora);
+                        }
+                        break;
+                    }
+                    case 4 -> {
+                        System.out.println("""
+                                El servicio premium incluye:\s
+                                Seguridad de red
+                                 Nube de IoT de electrodomesticos
+                                 Notificador en tiempo real de la infraestructura de la casa""");
+                        break;
+                    }
+                        default -> throw new IllegalStateException("Numero de seleccion incorrecto");
 
                 }
             }
+            case 4-> System.out.println("Gracias por su visita, su ultimo acceso fue:" +
+                    "\n El dia: " + fecha + " a las: "+ hora);
         }
     }
 }
