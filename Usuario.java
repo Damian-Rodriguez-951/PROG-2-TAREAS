@@ -6,6 +6,8 @@ public class Usuario {
      private String contra;
      String dire;
      String tele;
+     String dni;
+     String naci;
 
     // Constructor
     public Usuario(String usu, String contra) {
@@ -27,12 +29,36 @@ public class Usuario {
         this.contra = contra;
     }
 
-    public String getDire() {
+    public String getDire(String dire) {
         return dire;
     }
 
     public void setDire(String dire) {
         this.dire = dire;
+    }
+
+    public String getTele(String tele) {
+        return tele;
+    }
+
+    public void setTele(String tele) {
+        this.tele = tele;
+    }
+
+    public String getDni(String dni) {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public String getNaci(String naci) {
+        return naci;
+    }
+
+    public void setNaci(String naci) {
+        this.naci = naci;
     }
 
     // Métodos especiales
@@ -42,7 +68,5 @@ public class Usuario {
     public String cambio() {
         return this.usu + this.contra;
     }
-    public String dire(String direccion){
-        return this.dire;
-    }
+
 }
