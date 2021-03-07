@@ -30,7 +30,7 @@ public boolean getMen1() {
         this.anual = anual;
     }
 
-    //metodos
+    //metodos GETTER
     public boolean men1(boolean men1) {
         return men1;
     }
