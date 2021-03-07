@@ -3,7 +3,6 @@
 En este repositorio se encuentran las ramas:
 
 **Branch 1**: taller grupal 1 acerca de pedidos.
-
 **Branch 2**: tarea grupal de calculadora OOP
 **Branch 3**: tarea grupal de pedidos con OOP
 
