@@ -65,8 +65,6 @@ public class Usuario {
     public String registro() {
         return this.usu + this.contra;
     }
-    public String cambio() {
-        return this.usu + this.contra;
-    }
+
 
 }

@@ -69,7 +69,7 @@ public class Main {
                 System.out.println("Establezca una nueva contraseña: ");
                 contra = conn.nextLine();
                 Usuario usuNu = new Usuario(usuario, contra);
-                usuNu.cambio();
+                usuNu.registro();
 
             }
             case 2 -> {
