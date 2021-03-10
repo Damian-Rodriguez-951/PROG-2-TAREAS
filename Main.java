@@ -7,7 +7,7 @@ import java.time.LocalTime;
 public class Main {
     public static void main(String[] args) {
         // Scanner key =new Scanner(System.in);
-        int veces = 0, sele = 0;
+        int veces = 0, sele = 0, bandera = 0;
         LocalDate fecha = LocalDate.now();
         LocalTime hora = LocalTime.now();
         String contra = "", usuario = "", usuarior = "", contrar = "";
@@ -24,11 +24,11 @@ public class Main {
         do {
             //usuario
             Scanner usur = new Scanner(System.in);
-            System.out.println("Establezca un usuario: ");
+            System.out.println("Introduzca el usuario: ");
             usuarior = usur.nextLine();
             //contraseña
             Scanner conr = new Scanner(System.in);
-            System.out.println("Establezca una contraseña: ");
+            System.out.println("Introduzca la contraseña: ");
             contrar = conr.nextLine();
             if (Objects.equals(contrar, contra) && Objects.equals(usuarior, usuario)) {
                 System.out.println("Aceptado");
@@ -36,10 +36,11 @@ public class Main {
             } else {
                 System.out.println("Usuario o contraseña incorrecta");
                 veces = veces + 1;
+                bandera = 1;
             }
         }
         while (veces < 3);
-        if (veces > 3) {
+        if((veces==3)&& (bandera != 0)) {
             System.out.println("Llego al limite de intentos, espere un momento");
         }
         if (Objects.equals(contrar, contra) && Objects.equals(usuarior, usuario)) {
